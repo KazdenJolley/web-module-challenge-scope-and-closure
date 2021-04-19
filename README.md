@@ -43,6 +43,7 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+    * Closure is when a nested function accesses a variable outside of its own scope(ie. declared in the scope of a parent or grandparent function).
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +65,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+    Closure is used with the variable `name`. It is accessed in the scope of the parent function, which is personalDice.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+    The name 'Dan' will be the same each time, but the roll of the dice can/will change with each roll.
 c. What is the lexical scope of `newRoll`? 
+    The lexical scope of `newRoll` is withing the anonymous function where it is declared.
 
 
 ### Task 3 - Stretch Goals
